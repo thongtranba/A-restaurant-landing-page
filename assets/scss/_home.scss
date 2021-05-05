@@ -1,0 +1,311 @@
+#welcome {
+    // same display flex
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    width: 100%;
+    height: 100vh;
+    
+    .welcome-menu {
+        background: white;
+        padding: 50px;
+        position: relative;
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            img {
+                max-width: 100px;
+            }
+        }
+        .menu {
+            .menu-title {
+                text-transform: uppercase;
+                color: #d30e00;
+                font-weight: 700;
+                font-size: 1.2rem;
+                border-bottom: 1px solid #e2eaef;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+            ul.links {
+                li {
+                    a {
+                        font-size: 1.1rem;
+                        color: black;
+                        font-weight: 700;
+                        text-decoration: none;
+                        margin-bottom: 1.4rem;
+                        display: block;
+                        transition: color 0.3s ease-in-out;
+                        &:hover {
+                            color: #d30e00;
+                        }
+                    }
+                }
+            }
+        }
+        .social-icons {
+            display: flex;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgb(102, 132, 189);
+                font-size: 0.9rem;
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-bottom: 15px;
+            }
+        }
+        .location {
+            align-self: center;
+            position: absolute;
+            bottom: 50px;
+            .address {
+                color: grey;
+                margin-bottom: 20px;
+                line-height: 1.7rem;
+            }
+            .phone-number {
+                a {
+                    color: #d30e00;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .welcome-jumbo {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff1a00+0,f98900+50,ff1a00+100 */
+        background: #ff1a00; /* Old browsers */
+        background: -moz-linear-gradient(top, #ff1a00 0%, #f98900 50%, #ff1a00 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ff1a00 0%, #f98900 50%, #ff1a00 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to bottom,
+            #ff1a00 0%,
+            #f98900 50%,
+            #ff1a00 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#ff1a00',GradientType=0 ); /* IE6-9 */
+
+        width: 100%;
+        overflow: hidden;
+        padding: 100px;
+        .status {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+            background: black;
+            border-radius: 5px;
+            align-self: flex-start;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            align-self: flex-start;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .burger-fries {
+            width: 100%;
+            max-width: 900px;
+            animation: moveUpandDown 2s linear infinite;
+            position: relative;
+        }
+        @keyframes moveUpandDown {
+            0%,
+            100% {
+                bottom: 0;
+            }
+            50% {
+                bottom: 30px;
+            }
+        }
+    }
+}
+#information {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100vh;
+    .restaurant-image {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 50px;
+        h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .paragraphs {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 20px;
+            line-height: 1.7;
+            color: #808486;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+        .about-link {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 700;
+            span {
+                margin-right: 20px;
+                color: black;
+            }
+            .circle-right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff1a00+0,f98900+50,ff1a00+100 */
+                background: #ff1a00; /* Old browsers */
+                background: -moz-linear-gradient(top, #ff1a00 0%, #f98900 50%, #ff1a00 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    top,
+                    #ff1a00 0%,
+                    #f98900 50%,
+                    #ff1a00 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(
+                    to bottom,
+                    #ff1a00 0%,
+                    #f98900 50%,
+                    #ff1a00 100%
+                ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#ff1a00',GradientType=0 ); /* IE6-9 */
+
+                .fa-chevron-right {
+                    color: white;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+#food-preview {
+    background: rgb(215, 224, 240);
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .button-rounded {
+        background: #d30e00;
+        color: white;
+        display: inline-block;
+        padding: 15px;
+        border-radius: 30px;
+        margin-bottom: 150px;
+    }
+    .food-slider {  
+        width: 100%;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        
+        .slide {
+            width: 20%;
+            position: relative;
+            height: 500px;
+            cursor: pointer;
+            margin-right: 10px;
+            &:hover{
+                .background{
+                    background: #ee913a; 
+                    transform: translate3d(0,-100px,0);
+                }
+                .content{
+                    .food-title{
+                        color: white;
+                    }
+                    .food-description{
+                        color: white;
+                    }
+                }
+                
+            }
+            .background {
+                background: white;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                position: absolute;
+                transition: all .3s ease-in-out;
+            }
+            .content {
+                z-index: 2;
+                position: absolute;
+                padding: 20px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .food-title{
+                    color: #d30e00 ;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    margin-bottom: 3rem;
+                    // transition: all .3s ease-in-out;
+
+                }
+                .food-description{
+                    font-size: .8rem;
+                    font-weight: 300;
+                    line-height: 1.8;
+                    margin-bottom: 3rem;
+                    color: grey;
+                }
+            }    
+            img {
+                width: 98%;
+                max-width: 250px;
+            }
+        }
+   
+    }
+}
